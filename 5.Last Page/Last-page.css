@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body
+{
+    display: grid;
+    justify-content: center;
+    align-content: end;
+    background: white;
+    background-size: cover;
+    margin: 0;
+}
+/*---------------------------------------------Header----------------------------------------------*/
+.header
+{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 20px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    z-index: 1000;
+
+    .left-section
+    {
+        flex: 2;
+        display: flex;
+        align-items: center;
+        p{
+            margin-right: 40px;
+            color: rgb(227, 61, 148);
+            font-size: 40px;
+            margin-right: 40px;
+            font-family: "Sacramento", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        ul{
+            display: flex;
+            list-style-type: none;
+        }
+
+        ul a{
+            text-decoration: none;
+            margin-right: 30px;
+            color: #665b5b;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+    }
+
+    .right-section
+    {
+        flex: 1;
+        align-items: center;
+        justify-content: end;
+        display: flex;
+
+
+        .search{
+            --padding: 14px;
+
+            width: 150px;
+            display: flex;
+            align-items: center;
+            padding: var(--padding);
+            border-radius: 10px;
+            background-color: #efededcc;
+            height: 46px;
+        }
+
+        .search-input{
+            font-size: 16px;
+            font-family: 'Lexend', sans-serif;
+            color: #333333;
+            margin-left: var(--padding);
+            outline: none;
+            background: transparent;
+            width: 94px;
+            border: none;
+        }
+
+        .search-icon{
+            color: grey;
+        }
+
+        img{
+            height: 46px;
+            width: 46px;
+            border-radius: 23px;
+            margin-left: 24px;
+        }
+
+        button{
+            background-color: rgb(227, 61, 148);
+            color: white;
+            padding: 10px 15px;
+            font-size: px;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-left: 24px;
+        }
+
+    }
+
+}
+
+
+/*---------------------------------------------Middile-Content----------------------------------------------*/
+
+
+.container1 {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.content {
+    text-align: center;
+    margin-top: 200px;
+
+    h2{
+        font-weight: 700;
+    }
+    
+    p,h2{
+        margin-bottom: 20px;
+        font-family: Arial, sans-serif;
+    }
+    .span{
+        color: rgb(227, 61, 148);
+        font-weight: 550;
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(227, 61, 148);
+        font-weight: 550;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    .content {
+        max-width: 600px;
+    }
+}
+
+/*---------------------------------------------Footer----------------------------------------------*/
+
+footer
+{
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    background: #e8e8e8;
+
+    .container
+    {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+
+        h3
+        {
+            color: rgb(227, 61, 148);
+            font-size: 40px;
+            margin-right: 40px;
+            font-family: "Sacramento", cursive;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .dribbble p
+        {
+            color: #555;
+        }
+
+        .sci
+        {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(5,50px);
+
+            li
+            {
+                list-style: none;
+
+               a 
+               {
+                    display: inline-block;
+                    width: 36px;
+                    height: 36px;
+                    display: grid;
+                    align-content: center;
+                    justify-content: center;
+                    text-decoration: none;
+
+                    i{
+                        color: #fff;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .sec_quicklinks
+    {
+        position: relative;
+
+        p
+        {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    }
+
+        ul li
+        {
+            list-style: none; 
+
+            a
+            {
+                color: #555;
+                text-decoration: none;
+                margin-bottom: 10px;
+                display: inline-block;
+            }
+        }
+}
+
+.footer-lower
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #555;
+    background: #e8e8e8;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 20px 40px 30px;
+}
+
+@media (max-width: 991px)
+{
+    .footer{
+        padding: 40px;
+    }
+    .container
+    {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 20px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .container,
+    {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+    }
+}
