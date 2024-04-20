@@ -26,6 +26,11 @@ This repository contains the web pages or visuals which is given assignment.
 
 ![Screenshot 2024-04-20 221248](https://github.com/GundakarlaNithin/Aeonaxy/assets/163517157/d94a62ee-2165-4ef6-8aa2-ae8868c67a28)
 
+<br>
+
+https://github.com/GundakarlaNithin/Aeonaxy/assets/163517157/46250428-16e9-448c-bfa1-ef40630cd55b
+
+
 <br><br>
 
 ### 5. Header and footer
