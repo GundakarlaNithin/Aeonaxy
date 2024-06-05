@@ -1,7 +1,5 @@
-# Aeonaxy Internship Assignment
+# Interactive Web Page Development
 
-## Description:
-This repository contains the web pages or visuals which is given assignment.
 
 ## Visuals:
 ### 1. Sign Up page
